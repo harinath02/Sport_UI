@@ -55,10 +55,10 @@ body.dark-mode{
   background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: 50%;
-    width: 50px!important;
+    width: 35px!important;
     height: 64px!important;
     top: 40%!important;
-    
+    translate: 16px;
     opacity:0.8!important;
   color: transparent!important;
      /* right: 10 !important; */
@@ -70,8 +70,9 @@ body.dark-mode{
     background-size: 60% auto;
     background-position: 50%;
     transform: rotate(180deg);
-    width: 50px!important;
+    width: 35px!important;
     height: 64px!important;
+    translate: -16px;
     top: 40%!important;
 
   opacity:0.8!important;
