@@ -40,7 +40,7 @@ const CollectionCard: FC<CollectioncardcProps> = (props): JSX.Element => {
       >
        
       
-        <div className='flex justify-center'>
+        <div className='flex justify-center z-0'>
           {sportcards.map((card: CardType, index: number) => (
             <SwiperSlide>
               <div key={index} className=' bg-white m-4  w-[257px] h-[625px] -top-[269px] left-[109px] gap-0'>
