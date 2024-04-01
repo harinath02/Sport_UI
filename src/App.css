@@ -1,3 +1,8 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
 .App {
   text-align: center;
 }
@@ -45,4 +50,60 @@ body.dark-mode{
 .toggle-button {
   cursor: pointer;
   /* Add styles for the toggle button */
+}
+.swiper-button-next {
+  background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: 50%;
+    width: 50px!important;
+    height: 64px!important;
+    top: 40%!important;
+    
+    opacity:0.8!important;
+  color: transparent!important;
+     /* right: 10 !important; */
+    background-image: url('images/arrow.png')!important;
+    font-style: bold!important;
+}
+.swiper-button-prev {
+  background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: 50%;
+    transform: rotate(180deg);
+    width: 50px!important;
+    height: 64px!important;
+    top: 40%!important;
+
+  opacity:0.8!important;
+  color: transparent!important;
+     /* right: 10 !important; */
+    background-image: url('images/arrow.png')!important;
+    font-style: bold!important;
+}
+.swiper-button-next:hover {
+ 
+  opacity:1!important;
+  background-size: 80% auto!important;
+  color:transparent;
+
+  font-style:bold!important;
+}
+.swiper-button-prev:hover {
+  
+  opacity:1!important;
+  background-size: 80% auto!important;
+  color:transparent;
+
+  font-style:bold!important;
+}
+.swiper-scrollbar {
+
+  width: 0!important;
+  margin-top: 10px!important;
+  background: transparent; /* Change the background color */
+}
+
+.swiper-scrollbar-drag {
+  width: 0 !important;
+  background: green!important; /* Change the drag handle color */
 }
