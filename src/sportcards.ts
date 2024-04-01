@@ -2,6 +2,7 @@
   export const sportcards = [
    
     {
+       "index":"1", 
         "imageUrl": "/assets/Ticket_Mockup 3.png",
         "title": "Las Vegas Aviators",
         "schedule":"Oct 15 | Sun | 4:30 PM",
@@ -9,6 +10,7 @@
         "button":"Take Flight Collection"
       },
       {
+        "index":"2",
         "imageUrl": "/assets/Ticket_Mockup 2.png",
         "title": "Sacramento River Cats",
         "schedule":"Oct 15 | Sun | 4:30 PM",
@@ -16,6 +18,7 @@
         "button":"Orange Collection"
       },
       {
+        "index":"3",
         "imageUrl": "/assets/Ticket_Mockup 3.png",
         "title": "Las Vegas Aviators",
         "schedule":"Oct 15 | Sun | 4:30 PM",

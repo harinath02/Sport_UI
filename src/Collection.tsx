@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import CollectionCard from './CollectionCard';
+import Eclipse from './Eclipse';
 
 
 interface CollectionProps {

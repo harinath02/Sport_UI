@@ -10,8 +10,10 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import { url } from 'inspector';
+import Eclipse2 from './Eclipse2';
 
 interface CardType {
+  index:string;
   imageUrl: string;
   title: string;
   schedule: string;
@@ -39,9 +41,7 @@ const CollectionCard: FC<CollectioncardcProps> = (props): JSX.Element => {
        
       
         <div className='flex justify-center'>
-         
           {sportcards.map((card: CardType, index: number) => (
-         
             <SwiperSlide>
               <div key={index} className=' bg-white m-4  w-[257px] h-[625px] -top-[269px] left-[109px] gap-0'>
                 {/* Render each card individually */}
@@ -50,6 +50,7 @@ const CollectionCard: FC<CollectioncardcProps> = (props): JSX.Element => {
                 </div>
                 <div className='border-t border-dashed border-[#5b5b5e]'></div>
                 <Eclipse dark={props.dark}></Eclipse>
+                {/* {card.index === "3" &&  <Eclipse2 dark={props.dark}></Eclipse2> } */}
                 <div className='flex p-2 justify-center'>
                   <h2>{card.title}</h2>
                 </div>
@@ -66,6 +67,7 @@ const CollectionCard: FC<CollectioncardcProps> = (props): JSX.Element => {
         </div>
        
       </Swiper>
+      <Eclipse2 dark={props.dark}></Eclipse2>
     </>
   )
 }

@@ -4,7 +4,6 @@ import SportCard from './SportCard';
 import Button from './Button';
 import Collection from './Collection';
 import { IoMoon, IoSunny } from "react-icons/io5";
-import Eclipse from './Eclipse';
 
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <div className={`App ${dark ? 'dark-mode' : ''}`}>
-      <div className="toggle-button" onClick={darkModeHandler}>
+      <div className="toggle-button m-8 flex justify-end" onClick={darkModeHandler}>
         {dark ? <IoSunny /> : <IoMoon />}
       </div>
       <SportCard />

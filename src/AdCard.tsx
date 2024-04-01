@@ -6,7 +6,7 @@ function AdCard() {
             <div className=''>
                 {/* <img className='width-[48.09px] height-[25px] -top-[1163px] left-[780.85px] gap-10 px-[15px] py-[3px]' src='assets\adSticker.png' alt='adsticker'></img> */}
         <img className='p-3 w-[238.4px] h-[218px] -top-[1163px] left-[610.54px]' src='assets\adcard.png' alt=''></img>
-        <button className='w-[47.78px] absolute top-[195px] right-[148px] bg-black text-white '>Ad</button>
+        <button className='w-[47.78px] absolute top-[228px] right-[148px] bg-black text-white '>Ad</button>
         <div className='flex pl-9 pt-4 font-inter text-lg font-semibold leading-30 text-left'>
             <h2>Advertisement title</h2>
         </div>
