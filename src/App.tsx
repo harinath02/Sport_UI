@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SportCard from './SportCard';
+import Button from './Button';
+import Collection from './Collection';
+import { IoMoon, IoSunny } from "react-icons/io5";
+import Eclipse from './Eclipse';
+
 
 function App() {
+  const [dark, setDark] = React.useState(false);
+
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark-mode");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${dark ? 'dark-mode' : ''}`}>
+      <div className="toggle-button" onClick={darkModeHandler}>
+        {dark ? <IoSunny /> : <IoMoon />}
+      </div>
+      <SportCard />
+      <Button />
+      <Collection dark={dark} />
     </div>
   );
 }

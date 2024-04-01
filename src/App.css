@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+body.dark-mode{
+  background-color: #111;
+  color: #fff;
+}
+
+.toggle-button {
+  cursor: pointer;
+  /* Add styles for the toggle button */
+}
